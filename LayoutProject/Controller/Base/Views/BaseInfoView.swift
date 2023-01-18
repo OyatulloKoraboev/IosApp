@@ -34,10 +34,8 @@ class BaseInfoView:BaseView{
     
     init(title:String? = nil, buttonTitle:String? = nil) {
        
-        
         label.text = title?.uppercased()
         label.textAlignment = buttonTitle == nil ? .center : .left
-        button.setTitle(buttonTitle, for: .normal)
         button.isHidden = buttonTitle == nil ? true : false
         super.init(frame: .zero)
     }
@@ -76,13 +74,14 @@ extension BaseInfoView {
             make.centerY.equalTo(label.snp.centerY)
             make.right.equalToSuperview()
             make.width.equalTo(130)
-            make.height.equalTo(30)
+            make.height.equalTo(32)
         }
     }
     override func configureAppereance() {
         super.configureAppereance()
-        makeSystem(button: button)
+        
          
         backgroundColor = .clear
+        
     }
 }

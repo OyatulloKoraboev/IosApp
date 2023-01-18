@@ -29,6 +29,8 @@
 		4B0FFAF529563F30008DF37E /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0FFAF429563F30008DF37E /* DayView.swift */; };
 		4B0FFAF7295646FB008DF37E /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0FFAF6295646FB008DF37E /* Date + ext.swift */; };
 		4B0FFAFA2958D6DB008DF37E /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0FFAF92958D6DB008DF37E /* BaseInfoView.swift */; };
+		4BCA6B7029780EFB00BC9C4A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA6B6F29780EFB00BC9C4A /* TimerView.swift */; };
+		4BCA6B7329780F1300BC9C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA6B7229780F1300BC9C4A /* ProgressView.swift */; };
 		80E76A8AD6D3B050C8D2916C /* Pods_LayoutProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C315B666CE87AB28B257D062 /* Pods_LayoutProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		4B0FFAF429563F30008DF37E /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		4B0FFAF6295646FB008DF37E /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		4B0FFAF92958D6DB008DF37E /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		4BCA6B6F29780EFB00BC9C4A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		4BCA6B7229780F1300BC9C4A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		C315B666CE87AB28B257D062 /* Pods_LayoutProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayoutProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD97365F6721443D1B79CA6 /* Pods-LayoutProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutProject.release.xcconfig"; path = "Target Support Files/Pods-LayoutProject/Pods-LayoutProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,15 @@
 				C315B666CE87AB28B257D062 /* Pods_LayoutProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0E0FAA295B6FBA00D3BEBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BCA6B6F29780EFB00BC9C4A /* TimerView.swift */,
+				4BCA6B7229780F1300BC9C4A /* ProgressView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4B0FFA6A29538C1E008DF37E = {
@@ -193,6 +206,7 @@
 		4B0FFA9F2953B85B008DF37E /* Sessions */ = {
 			isa = PBXGroup;
 			children = (
+				4B0E0FAA295B6FBA00D3BEBC /* Views */,
 				4B0FFAA22953B882008DF37E /* SessionViewController.swift */,
 			);
 			path = Sessions;
@@ -217,20 +231,20 @@
 		4B0FFAA82953C2C3008DF37E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4B0FFAF129563CD3008DF37E /* Views */,
+				4B0FFAF129563CD3008DF37E /* SubViews */,
 				4B0FFAA92953C2ED008DF37E /* WAButton.swift */,
 				4B0FFAEF29561D65008DF37E /* OverviewNavbar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4B0FFAF129563CD3008DF37E /* Views */ = {
+		4B0FFAF129563CD3008DF37E /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
 				4B0FFAF229563CE7008DF37E /* WeekView.swift */,
 				4B0FFAF429563F30008DF37E /* DayView.swift */,
 			);
-			path = Views;
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		4B0FFAF82958D6CA008DF37E /* Views */ = {
@@ -376,6 +390,8 @@
 				4B0FFAF029561D65008DF37E /* OverviewNavbar.swift in Sources */,
 				4B0FFAA32953B882008DF37E /* SessionViewController.swift in Sources */,
 				4B0FFAFA2958D6DB008DF37E /* BaseInfoView.swift in Sources */,
+				4BCA6B7029780EFB00BC9C4A /* TimerView.swift in Sources */,
+				4BCA6B7329780F1300BC9C4A /* ProgressView.swift in Sources */,
 				4B0FFAAA2953C2ED008DF37E /* WAButton.swift in Sources */,
 				4B0FFA962953B151008DF37E /* NavBarViewController.swift in Sources */,
 				4B0FFA912953A6C4008DF37E /* UIColors + ext.swift in Sources */,

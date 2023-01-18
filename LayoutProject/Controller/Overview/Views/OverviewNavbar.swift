@@ -69,7 +69,7 @@ extension OverviewNavbar {
         label.textColor = Resources.OverViewController.Colors.buttonTextColor
         label.font = Resources.Fonts.helveticaRegular(size: 22)
         
-        allWorkOuts.setTitleToButton(title: Resources.OverViewController.Strings.allWorkOuts)
+
         allWorkOuts.backgroundColor = Resources.OverViewController.Colors.buttonColor
         allWorkOuts.layer.cornerRadius = 15
         allWorkOuts.addTarget(self, action: #selector(allWorkoutsButtonAction), for: .touchUpInside)

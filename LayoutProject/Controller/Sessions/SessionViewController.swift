@@ -6,11 +6,11 @@
 //
 
 import UIKit
-
+import SnapKit
 class SessionViewController: BaseViewController {
 
-    let timerView:BaseInfoView = {
-        let view = BaseInfoView(title: "Test", buttonTitle: "Press me")
+    let timerView:TimerView = {
+        let view = TimerView()
         
         return view
     }()
@@ -50,7 +50,7 @@ extension SessionViewController {
         navigationController?.tabBarItem.title = "Session"
         addNavBarButton(at: .left, title: "Pause")
         addNavBarButton(at: .right, title: "Finish")
-        
+        timerView.backgroundColor = .white
         
     }
 }

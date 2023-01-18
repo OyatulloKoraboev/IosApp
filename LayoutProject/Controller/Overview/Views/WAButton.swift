@@ -70,37 +70,34 @@ extension WAButton {
         iconView.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-12)
             
-            make.centerY.equalTo(label)
+            make.centerY.equalToSuperview()
             make.height.equalTo(5)
             make.width.equalTo(10)
             
         }
         
         label.snp.makeConstraints { make in
-            make.left.top.bottom.equalToSuperview().inset(12)
+            make.left.equalToSuperview().offset(12)
             make.right.equalTo(iconView).offset(-12)
+            make.centerY.equalTo(iconView)
             make.width.equalTo(100)
-            make.height.equalTo(10)
+            make.height.equalTo(17)
 
             
         }
     }
     
     func configure(){
-        backgroundColor = Resources.Colors.active
+        
         layer.cornerRadius = 14
         
         switch type{
-            
         case .primary:
-                
                 label.textColor = Resources.Colors.inactive
                 label.font = Resources.Fonts.helveticaRegular(size: 15)
                 iconView.image = Resources.OverViewController.Images.allWorkOutImage?.withRenderingMode(.alwaysTemplate)
                 iconView.tintColor = Resources.Colors.inactive
-                
         case .secondary:
-                
                 label.textColor = Resources.Colors.active
                 layer.cornerRadius = 14
                 label.font = Resources.Fonts.helveticaRegular(size: 13)

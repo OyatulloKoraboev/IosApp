@@ -19,6 +19,8 @@ enum Resources {
         static var background = UIColor(hexString: "#F8F9F9")
         
         static var seperator = UIColor(hexString: "#E8ECEF")
+        
+        
     }
     
     enum Images {

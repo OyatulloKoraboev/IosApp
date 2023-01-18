@@ -23,12 +23,15 @@ final class TabBarViewController: UITabBarController {
         super .init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configure()
+        setTab(tab: .session)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+    private func setTab(tab:Tab){
+        selectedIndex = tab.rawValue
+    }
     private func configure() {
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inactive
